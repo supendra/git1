@@ -1,0 +1,242 @@
+Jul 05, 2017 11:12:25 AM org.apache.catalina.core.AprLifecycleListener init
+WARNING: The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:201)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:109)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:592)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1282)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1555)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:616)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:667)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.69
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Apr 11 2016 07:57:09 UTC
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.69.0
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          x86
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_121\jre
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\conf\logging.properties
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\endorsed
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:12:25 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\temp
+Jul 05, 2017 11:12:25 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:12:26 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:12:26 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1424 ms
+Jul 05, 2017 11:12:26 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 05, 2017 11:12:26 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.69
+Jul 05, 2017 11:12:26 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\hello.war
+Jul 05, 2017 11:12:27 AM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [156] milliseconds.
+Jul 05, 2017 11:12:27 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\hello.war has finished in 1,562 ms
+Jul 05, 2017 11:12:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\docs
+Jul 05, 2017 11:12:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\docs has finished in 63 ms
+Jul 05, 2017 11:12:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\examples
+Jul 05, 2017 11:12:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\examples has finished in 1,062 ms
+Jul 05, 2017 11:12:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\ROOT
+Jul 05, 2017 11:12:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\ROOT has finished in 63 ms
+Jul 05, 2017 11:12:29 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:12:29 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:12:29 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3015 ms
+Jul 05, 2017 11:12:36 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:12:36 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:12:36 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 05, 2017 11:12:37 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:12:37 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:12:37 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:12:37 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:14:35 AM org.apache.catalina.core.AprLifecycleListener init
+WARNING: The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:201)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:109)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:592)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1282)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1555)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:616)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:667)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.69
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Apr 11 2016 07:57:09 UTC
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.69.0
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          x86
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files (x86)\Java\jdk1.8.0_121\jre
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\conf\logging.properties
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\endorsed
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69
+Jul 05, 2017 11:14:35 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\temp
+Jul 05, 2017 11:14:36 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:14:36 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:14:36 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1175 ms
+Jul 05, 2017 11:14:36 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 05, 2017 11:14:36 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.69
+Jul 05, 2017 11:14:36 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\hello.war
+Jul 05, 2017 11:14:36 AM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [109] milliseconds.
+Jul 05, 2017 11:14:36 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\hello.war has finished in 532 ms
+Jul 05, 2017 11:14:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\docs
+Jul 05, 2017 11:14:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\docs has finished in 93 ms
+Jul 05, 2017 11:14:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\examples
+Jul 05, 2017 11:14:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\examples has finished in 1,000 ms
+Jul 05, 2017 11:14:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\ROOT
+Jul 05, 2017 11:14:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\Ravi\Desktop\New folder (2)\AplicationServer\apache-tomcat-7.0.69\webapps\ROOT has finished in 63 ms
+Jul 05, 2017 11:14:37 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:14:37 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:14:37 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1799 ms
+Jul 05, 2017 11:16:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:16:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:16:47 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 05, 2017 11:16:47 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:16:47 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 05, 2017 11:16:47 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-7070"]
+Jul 05, 2017 11:16:47 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
